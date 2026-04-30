@@ -4,14 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AF Cavalcante Locação | Máquinas Pesadas com ou sem Operador</title>
-  <meta name="description" content="Locação de máquinas pesadas com ou sem operador. Retroescavadeira, escavadeira, mini escavadeira, mini carregadeira e caminhões. Atendimento em Mogi das Cruzes, SP e região." />
+  <meta name="description" content="Locação de máquinas pesadas com ou sem operador. Retroescavadeira, escavadeira, mini escavadeira, mini carregadeira e caminhões. Atendimento em São Paulo e região." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
-    /* =============================================
-       RESET & BASE
-    ============================================= */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
@@ -188,15 +185,18 @@
       flex-shrink: 0;
     }
     .logo-icon {
-      width: 42px;
       height: 42px;
-      background: var(--yellow);
-      border-radius: 4px;
+      width: auto;
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    .logo-icon svg { width: 26px; height: 26px; }
+    .logo-icon img {
+      height: 42px;
+      width: auto;
+      object-fit: contain;
+      display: block;
+    }
     .logo-text {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 900;
@@ -246,9 +246,7 @@
     .nav-link:hover { color: var(--white); }
     .nav-link:hover::after { transform: scaleX(1); }
 
-    .nav-cta {
-      margin-left: 12px;
-    }
+    .nav-cta { margin-left: 12px; }
 
     /* Mobile toggle */
     .hamburger {
@@ -278,7 +276,6 @@
       overflow: hidden;
     }
 
-    /* diagonal grid pattern */
     .hero::before {
       content: '';
       position: absolute;
@@ -290,7 +287,6 @@
       pointer-events: none;
     }
 
-    /* yellow diagonal accent */
     .hero::after {
       content: '';
       position: absolute;
@@ -455,7 +451,6 @@
       overflow: hidden;
       aspect-ratio: 4/3;
       cursor: pointer;
-      group: true;
     }
     .equip-card-img {
       width: 100%;
@@ -796,4 +791,12 @@
     }
     .cta-banner-inner {
       display: flex;
-      
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .cta-banner-text .section-title { color: var(--black); }
+    .cta-banner-text p {
+      color: rgba(0,0,0,.65);
+   
